@@ -4,7 +4,7 @@ abstract class Shape {
 
 class Rectangle extends Shape {
     constructor(public width: number, public height: number) {
-       super()
+        super();
     }
     public calcArea(): number {
         return this.width * this.height
@@ -25,11 +25,11 @@ function area(shape: Shape) {
 } 
 
 let rectangle = new Rectangle(10, 25);
-let square = new Square(10)
+let square    = new Square(10)
 
 let rectangleArea = area(rectangle)
-let squareArea = area(square)
+let squareArea    = area(square)
 
 console.log('rectangleArea --->', rectangleArea)
-console.log('squareArea --->', squareArea)
+console.log('squareArea --->',    squareArea)
 

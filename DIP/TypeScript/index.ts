@@ -17,8 +17,8 @@ import { MySqlDatabase } from "./mysql-database"
 let mySqlDb:MySqlDatabase = new MySqlDatabase()
 let mongoDb:MongoDatabase = new MongoDatabase()
 
-let hightLevelMySql = new HighLevelModule(mySqlDb)
-let hightLevelMongo = new HighLevelModule(mongoDb)
+let hightLevelMySql:HighLevelModule = new HighLevelModule(mySqlDb)
+    hightLevelMySql.execute('Data executed MySQL')
 
-hightLevelMySql.execute('Data executed MySql')
-hightLevelMongo.execute('Data executed MongoDb')
+let hightLevelMongo:HighLevelModule = new HighLevelModule(mongoDb)
+    hightLevelMongo.execute('Data executed MongoDB')

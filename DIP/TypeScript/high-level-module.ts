@@ -1,7 +1,7 @@
-import { Idatabase } from "./interface/idatabase";
+import { IDatabase } from "./interface/i-database";
 
 export class HighLevelModule {
-    constructor(private database: Idatabase) { }
+    constructor(private database: IDatabase) { }
  
     execute(data: string){
         this.database.save(data)

@@ -1,10 +1,10 @@
 export class BlogPost {
     title:   string = '';
-    contect: string = '';
+    content: string = '';
     
-    constructor(title: string, contect: string){
+    constructor(title: string, content: string){
         this.title   = title;
-        this.contect = contect;
+        this.content = content;
     }
 
     createPost() {

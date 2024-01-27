@@ -11,10 +11,10 @@ function executePayment(amount: number, paymentProcessor: PaymentProcessor) {
 let creditCardProcessor = new CreditCard()
 let debitCardProcessor  = new DebitCard()
 let bayPalCardProcessor = new PayPalCard()
-let bitcoinProcessor = new Bitcoin()
+let bitcoinProcessor    = new Bitcoin()
 
-executePayment(50,  creditCardProcessor)
-executePayment(800, debitCardProcessor)
-executePayment(300, bayPalCardProcessor)
+executePayment(50,   creditCardProcessor)
+executePayment(800,  debitCardProcessor)
+executePayment(300,  bayPalCardProcessor)
 executePayment(1300, bitcoinProcessor)
 

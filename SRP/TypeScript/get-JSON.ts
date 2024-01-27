@@ -9,7 +9,7 @@ export class GetJSON {
     returnJSON(){
         return {
             title:   this.blogPost.title, 
-            contect: this.blogPost.contect
+            content: this.blogPost.content
         }
     }
 }

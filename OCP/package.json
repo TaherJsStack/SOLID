@@ -4,11 +4,12 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "(npm parcel ./index.html) & npx parcel watch ./index.html"
+    "serve": "nodemon ./TypeScript/index.ts"
   },
   "author": "Taher Ahmed",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2"
   }
 }

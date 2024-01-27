@@ -1,3 +1,3 @@
-export interface Idatabase{
+export interface IDatabase{
     save(data: string): void
 }
